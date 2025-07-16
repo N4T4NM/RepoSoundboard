@@ -4,6 +4,8 @@ A builtin soundboard for R.E.P.O
 ### WARNING
 Right now, this project is more of a proof of concept, but I'll continue to work on it to improve performance and fix bugs.
 
+You can report any issues [here](https://www.github.com/N4T4NM/RepoSoundboard/issues)
+
 ### ISSUES
 - Only **.wav** files supported
 - Resampler code has performance issues
