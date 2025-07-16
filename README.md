@@ -18,3 +18,7 @@ To do that with ffmpeg run the command `ffmpeg -i <audio file> -ac 1 -ar 48000 <
 
 ### Usage
 You can manage the sounds by opening the in-game settings menu and clicking on **`SOUNDBOARD`**
+
+---
+
+If you like this mod consider [donating](https://ko-fi.com/natanm), it will help me develop this and much more projects!
