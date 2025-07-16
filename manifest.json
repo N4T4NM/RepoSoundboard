@@ -1,0 +1,9 @@
+{
+  "name": "RepoSoundboard",
+  "description": "Builtin soundboard",
+  "version_number": "1.0.0",
+  "dependencies": [
+    "Zehs-REPOLib-2.1.0"
+  ],
+  "website_url": ""
+}
