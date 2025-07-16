@@ -62,7 +62,7 @@ public class RepoSoundboard : BaseUnityPlugin
         AudioSource loopbackSrc = this.gameObject.AddComponent<AudioSource>();
         loopbackSrc.clip = Loopback.Clip;
         loopbackSrc.loop = true;
-        loopbackSrc.volume = 1f;
+        loopbackSrc.volume = .35f;
         loopbackSrc.Play();
         
         var rec = _vc!.recorder!;
