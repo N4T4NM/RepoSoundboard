@@ -3,7 +3,8 @@
   "description": "Builtin soundboard",
   "version_number": "1.0.0",
   "dependencies": [
-    "Zehs-REPOLib-2.1.0"
+    "Zehs-REPOLib-2.1.0",
+    "nickklmao-MenuLib-2.5.0"
   ],
   "website_url": "https://github.com/N4T4NM/RepoSoundboard"
 }
