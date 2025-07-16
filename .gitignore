@@ -2,4 +2,5 @@
 .idea/
 bin/
 obj/
+*.zip
 *.sln.DotSettings.user
