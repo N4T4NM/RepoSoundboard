@@ -1,5 +1,5 @@
 # R.E.P.O Soundboard
-A builtin soundboard for REPO
+A builtin soundboard for R.E.P.O
 
 ### WARNING
 Right now, this project is more of a proof of concept, but I'll continue to work on it to improve performance and fix bugs.
