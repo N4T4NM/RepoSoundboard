@@ -29,6 +29,8 @@ public static class SoundboardAudioProvider
                 if (obj.Finished) obj.Stop();
                 
                 int available = obj.Read(temp, 0, temp.Length);
+                if(available == 0) obj.Stop();
+                
                 for (int sampleIdx = 0; sampleIdx < available; sampleIdx++)
                 {
                     samples[sampleIdx] += temp[sampleIdx];
