@@ -82,16 +82,12 @@ public class WaveSamplesProvider : ISamplesProvider
     
     bool GetBytesForSample(int count)
     {
-        for (int i = 0; i < count; i++)
-        {
-            if (Stream.Position >= Stream.Length) return false;
-            if (_currentDataChunkByteIdx >= _currentDataChunkSz && !NextDataChunk()) return false;
-
-            _currentDataChunkByteIdx += Stream.Read(_nextSamples, i, 1);
-            _bytePos++;
-        }
-
-        return true;
+        if (_currentDataChunkByteIdx >= _currentDataChunkSz && !NextDataChunk()) return false;
+        
+        if (Stream.Read(_nextSamples, 0, count) == count) 
+            return true;
+        
+        return false;
     }
     bool NextDataChunk()
     {
