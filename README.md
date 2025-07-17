@@ -11,7 +11,7 @@ You can report any issues [here](https://www.github.com/N4T4NM/RepoSoundboard/is
 - The loopback audio has a delay
 - Only works on singleplayer
 
-It is recommended that you use a tool like ffmpeg to generate a **mono** audio file with a sample rate of **48 Khz**.
+If you experience performance issues when playing some audio files, it is recommended that you use a tool like ffmpeg to generate a **mono** audio file with a sample rate of **48 Khz**.
 
 To do that with ffmpeg run the command `ffmpeg -i <audio file> -ac 1 -ar 48000 <output wav file>`
 
