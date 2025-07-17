@@ -8,7 +8,6 @@ You can report any issues [here](https://www.github.com/N4T4NM/RepoSoundboard/is
 
 ### ISSUES
 - Only **.wav** files supported
-- Resampler code has performance issues
 - The loopback audio has a delay
 - Only works on singleplayer
 
