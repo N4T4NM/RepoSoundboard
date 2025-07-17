@@ -7,7 +7,7 @@ public class SoundboardLoopback
 {
     public SoundboardLoopback()
     {
-        _samples = new float[RepoSoundboard.AudioFormat.SampleRate];
+        _samples = new float[RepoSoundboard.AudioFormat.SampleRate / 2];
         
         Clip = AudioClip.Create("SoundboardLoopback",
             _samples.Length,
