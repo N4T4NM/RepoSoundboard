@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace RepoSoundboard;
 
-[BepInPlugin("NatanM.RepoSoundboard", "RepoSoundboard", "1.0.1")]
+[BepInPlugin("NatanM.RepoSoundboard", "RepoSoundboard", "1.0.2")]
 public class RepoSoundboard : BaseUnityPlugin
 {
     internal static RepoSoundboard Instance { get; private set; } = null!;

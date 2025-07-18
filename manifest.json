@@ -1,7 +1,7 @@
 {
   "name": "RepoSoundboard",
   "description": "Builtin soundboard",
-  "version_number": "1.0.1",
+  "version_number": "1.0.2",
   "dependencies": [
     "Zehs-REPOLib-2.1.0",
     "nickklmao-MenuLib-2.5.0"
