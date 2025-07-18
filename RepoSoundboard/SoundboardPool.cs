@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
-using System.Reflection;
 using Newtonsoft.Json;
 using UnityEngine;
 
@@ -33,8 +33,8 @@ public static class SoundboardPool
     {
         try
         {
-            RepoSoundboard.Logger.LogDebug("Saving settings...");
             var settings = GetSettingsFile();
+            RepoSoundboard.Logger.LogDebug($"Saving settings to \"{settings.FullName}\"...");
             File.WriteAllText(settings.FullName, JsonConvert.SerializeObject(_objects, new JsonSerializerSettings()
             {
                 Converters = { new HotKeyConverter() },
@@ -100,8 +100,9 @@ public static class SoundboardPool
     {
         try
         {
-            FileInfo asmFile = new(Assembly.GetAssembly(typeof(RepoSoundboard))!.Location);
-            return new FileInfo(Path.Combine(asmFile.Directory!.FullName, "soundboard_settings.json"));
+            var proc = Process.GetCurrentProcess();
+            FileInfo procFile = new(proc.MainModule!.FileName);
+            return new FileInfo(Path.Combine(procFile.Directory!.FullName, "soundboard_settings.json"));
         }
         catch (Exception e)
         {
